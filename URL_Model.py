@@ -90,14 +90,14 @@ model_1
 
 # ## K Nearest Neighbours
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=3)
+classifier = KNeighborsClassifier(n_neighbors=5)
 classifier.fit(x_test, y_test)
 model_2 = classifier.score(x_test, y_test)
 model_2
 
 # ## Decision Trees
 from sklearn.tree import DecisionTreeClassifier
-dct = DecisionTreeClassifier(criterion='entropy', random_state=1)
+dct = DecisionTreeClassifier(criterion='entropy', random_state=0)
 dct.fit(x_train,y_train)
 model_3 = dct.score(x_test,y_test)
 model_3
