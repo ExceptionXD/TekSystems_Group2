@@ -79,3 +79,12 @@ train_vect.todense()
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(train_vect,test,test_size=0.3)
 
+
+# ## Logistic Regression
+
+from sklearn.linear_model import LogisticRegression
+lreg = LogisticRegression(random_state=2)
+lreg.fit(x_train,y_train)
+model_1 = lreg.score(x_test,y_test)
+model_1
+
