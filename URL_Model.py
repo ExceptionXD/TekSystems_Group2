@@ -95,3 +95,10 @@ classifier.fit(x_test, y_test)
 model_2 = classifier.score(x_test, y_test)
 model_2
 
+# ## Decision Trees
+from sklearn.tree import DecisionTreeClassifier
+dct = DecisionTreeClassifier(criterion='entropy', random_state=3)
+dct.fit(x_train,y_train)
+model_3 = dct.score(x_test,y_test)
+model_3
+
