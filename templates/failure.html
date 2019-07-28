@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        .index-body {
+            animation: background-color infinite 10s;
+            font-family: 'Kaushan Script', cursive;
+        }
+
+        .index-header {
+            text-align: center;
+        }
+
+        @media(min-width:1200px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 50px;
+                animation: fadeIn 2s;
+            }
+
+            .free-space {
+                height: 200px;
+            }
+
+            .collapsible {
+                background-color: transparent;
+                color: white;
+                border: 0px;
+                margin-left: 35%;
+            }
+
+            .collapsed-data {
+                margin-top: 40px;
+                text-align: left;
+                display: none;
+                margin-left: 30%;
+                width: 40%;
+                color: white;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:1200px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 40px;
+                animation: fadeIn 3s;
+            }
+
+            .free-space {
+                height: 400px;
+            }
+
+            .collapsible {
+                background-color: transparent;
+                color: white;
+                border: 0px;
+                margin-left: 40%;
+            }
+
+            .collapsed-data {
+                margin-top: 40px;
+                text-align: left;
+                display: none;
+                width: 60%;
+                margin-left: 20%;
+                color: white;
+            }
+        }
+
+        @media(max-width:768px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                animation: fadeIn 3s;
+            }
+
+            .free-space {
+                height: 300px;
+            }
+
+            .collapsible {
+                background-color: transparent;
+                color: white;
+                border: 0px;
+                margin-left: 50%;
+            }
+
+            .collapsed-data {
+                margin-top: 40px;
+                text-align: left;
+                display: none;
+                width: 60%;
+                margin-left: 20%;
+                color: white;
+            }
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes background-color {
+            0% {
+                background: #FFB9B9;
+            }
+
+            25% {
+                background: #FFA3A3;
+            }
+
+            50% {
+                background: #FF8C8C;
+            }
+
+            75% {
+                background: #FFA3A3;
+            }
+
+            100% {
+                background: #FFB9B9;
+            }
+        }
+
+        input:focus {
+            outline: none !important;
+        }
+
+        button:focus {
+            outline: none !important;
+            color: azure;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body class="index-body">
+    <nav class="navbar navbar-inverse navbar-fixed-top myNavbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://127.0.0.1:5000/">Url Detector</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://127.0.0.1:5000/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="free-space"></div>
+    <div class="container-fluid index-header">
+        <h1>Oops! The URL is malicious.</h1>
+        <button class="collapsible">Know more</button>
+        <div class="collapsed-data">
+            Danger Ahead!<br>
+            The entered URL has been predicted to be a malicious web site, domain or IP address. Visiting this web site could potentially put you at risk to becoming infected.<br><br>
+
+            Users can be silently infected just by visiting a web site with attacks known as drive-by downloads or social engineering attacks where misleading applications can attempt to trick users into installing fake antivirus solutions or fake video players.<br><br>
+            This has been predicted by use of Machine Learning.<br> The Algorithms that have been used are:<br>
+            <ul>
+                <li>Logistic Regression</li>
+                <li>K Nearest Neighbours</li>
+                <li>Decision Tree Classifier</li>
+                <li>Random Forest</li>
+                <li>Support Vector Machine</li>
+            </ul>
+        </div>
+    </div>
+    <div class="free-space"></div>
+    <div class="footer">
+        All rights reserved (c) 2019 TekSystems_Group2
+    </div>
+    <script type="text/javascript">
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body></html>
