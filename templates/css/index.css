@@ -7,16 +7,85 @@
     text-align: center;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    animation: fadeIn 3s;
+@media(min-width:767px) {
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        animation: fadeIn 3s;
+    }
+
+    .free-space {
+        height: 200px;
+    }
+
+    input {
+        border: 0;
+        font-size: 20px;
+        height: 40px;
+        margin-top: 20px;
+        width: 80%;
+        max-width: 500px;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    button {
+        height: 36px;
+        margin-top: 22.5px;
+        width: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 0px;
+        text-align: center;
+        position: fixed;
+        color: white;
+        margin-left: -32px;
+        background: #457BB8;
+    }
 }
 
-.free-space {
-    height: 250px;
+@media(max-width:767px) {
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        animation: fadeIn 3s;
+    }
+
+    input {
+        border: 0;
+        font-size: 14px;
+        height: 25px;
+        margin-top: 20px;
+        width: 80%;
+        max-width: 500px;
+        padding: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .free-space {
+        height: 330px;
+    }
+
+    button {
+        height: 21px;
+        margin-top: 22px;
+        font-size: 10px;
+        width: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 0px;
+        text-align: center;
+        position: fixed;
+        color: white;
+        margin-left: -22px;
+        background: #457BB8;
+    }
 }
+
 
 @keyframes fadeIn {
     from {
@@ -48,4 +117,23 @@ h1 {
     100% {
         background: #CDC8FF;
     }
+}
+
+input:focus {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
 }
