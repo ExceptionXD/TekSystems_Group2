@@ -90,7 +90,7 @@ model_1
 
 # ## K Nearest Neighbours
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=2)
+classifier = KNeighborsClassifier(n_neighbors=4)
 classifier.fit(x_test, y_test)
 model_2 = classifier.score(x_test, y_test)
 model_2
