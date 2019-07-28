@@ -1,0 +1,40 @@
+.index-body {
+    animation: background-color infinite 10s;
+    font-family: 'Lato', sans-serif;
+}
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 50px;
+        animation: fadeIn 3s;
+    }
+
+    .index-header {
+        text-align: center;
+        background-color: cadetblue;
+        height: 100px;
+    }
+
+    .free-space {
+        height: 100px;
+    }
+
+input:focus {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.aboutus {
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.aboutus-header {
+    font-size: 50px;
+}
