@@ -74,22 +74,38 @@
     }
 }
 
+.contactus {
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.myInput {
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+.myBtn {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+}
+
 input:focus {
     outline: none !important;
 }
 
 button:focus {
     outline: none !important;
-}
-
-.aboutus {
-    margin-left: 10%;
-    width: 80%;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-.aboutus-header {
-    font-size: 50px;
 }
