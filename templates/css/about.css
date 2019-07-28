@@ -1,0 +1,95 @@
+.index-body {
+    animation: background-color infinite 10s;
+    font-family: 'Lato', sans-serif;
+}
+
+@media(min-width:767px) {
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        animation: fadeIn 3s;
+    }
+
+    .index-header {
+        text-align: center;
+        background-color: cadetblue;
+        height: 100px;
+    }
+
+    .free-space {
+        height: 100px;
+    }
+}
+
+@media(max-width:767px) {
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        animation: fadeIn 3s;
+    }
+
+    .index-header {
+        text-align: center;
+        background-color: cadetblue;
+        height: 70px;
+    }
+
+    .free-space {
+        height: 250px;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes background-color {
+    0% {
+        background: #CDC8FF;
+    }
+
+    25% {
+        background: #A0DFFF;
+    }
+
+    50% {
+        background: #EAC8FF;
+    }
+
+    75% {
+        background: #A0DFFF;
+    }
+
+    100% {
+        background: #CDC8FF;
+    }
+}
+
+input:focus {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.aboutus {
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.aboutus-header {
+    font-size: 50px;
+}

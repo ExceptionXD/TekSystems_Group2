@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        .index-body {
+            animation: background-color infinite 10s;
+            font-family: 'Kaushan Script', cursive;
+        }
+
+        @media(min-width:767px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 50px;
+                animation: fadeIn 3s;
+            }
+
+            .index-header {
+                text-align: center;
+                height: 100px;
+            }
+
+            .free-space {
+                height: 100px;
+            }
+        }
+
+        @media(max-width:767px) {
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 25px;
+                animation: fadeIn 3s;
+            }
+
+            .index-header {
+                text-align: center;
+                height: 70px;
+            }
+
+            .free-space {
+                height: 250px;
+            }
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes background-color {
+            0% {
+                background: #CDC8FF;
+            }
+
+            25% {
+                background: #A0DFFF;
+            }
+
+            50% {
+                background: #EAC8FF;
+            }
+
+            75% {
+                background: #A0DFFF;
+            }
+
+            100% {
+                background: #CDC8FF;
+            }
+        }
+
+        input:focus {
+            outline: none !important;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+
+        .aboutus {
+            margin-left: 10%;
+            width: 80%;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+
+        .aboutus-header {
+            font-size: 50px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body class="index-body">
+    <nav class="navbar navbar-inverse navbar-fixed-top myNavbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://127.0.0.1:5000/">Url Detector</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li class="active"><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://127.0.0.1:5000/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="free-space"></div>
+    <div class="container-fluid index-header">
+        <h1>About Us</h1>
+    </div>
+    <div class="container-fluid">
+        <p class="aboutus"><br><br><br>
+            We are a group of like-minded individuals working to fuel our passion. We are obsessed with Technology and we bring out fresh ideas which will not only lead to a better world but would also nurture young talents to work towards to work towards their goals.
+        </p>
+    </div>
+
+    <div class=" footer">
+        All rights reserved (c) 2019 TekSystems_Group2
+    </div>
+</body></html>

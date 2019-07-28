@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/success.css">
+</head>
+
+<body class="index-body">
+    <nav class="navbar navbar-inverse navbar-fixed-top myNavbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://127.0.0.1:5000/">Url Detector</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="http://127.0.0.1:5000/about">About Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://127.0.0.1:5000/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="free-space"></div>
+    <div class="container-fluid index-header">
+        <h1>Yay! Entered URL is not malicious.</h1>
+        <button class="collapsible">Know more</button>
+        <div class="collapsed-data">
+            Full Speed Ahead!<br>
+            The entered URL has been predicted to be a secure web site, domain or IP address.<br><br>
+
+            This has been predicted by use of Machine Learning.<br> The Algorithms that have been used are:<br>
+            <ul>
+                <li>Logistic Regression</li>
+                <li>K Nearest Neighbours</li>
+                <li>Decision Tree Classifier</li>
+                <li>Random Forest</li>
+                <li>Support Vector Machine</li>
+            </ul>
+        </div>
+    </div>
+    <div class="free-space"></div>
+    <script type="text/javascript">
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body></html>
