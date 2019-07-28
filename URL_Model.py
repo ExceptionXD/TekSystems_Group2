@@ -97,7 +97,7 @@ model_2
 
 # ## Decision Trees
 from sklearn.tree import DecisionTreeClassifier
-dct = DecisionTreeClassifier(criterion='entropy', random_state=0)
+dct = DecisionTreeClassifier(criterion='entropy', random_state=1)
 dct.fit(x_train,y_train)
 model_3 = dct.score(x_test,y_test)
 model_3
@@ -115,3 +115,4 @@ clf = SVC(kernel = 'linear', random_state=1)
 clf.fit(x_test, y_test)
 model_5 = clf.score(x_test, y_test)
 model_5
+
