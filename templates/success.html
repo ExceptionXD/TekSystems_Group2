@@ -28,7 +28,36 @@
     <div class="free-space"></div>
     <div class="container-fluid index-header">
         <h1>Yay! Entered URL is not malicious.</h1>
+        <button class="collapsible">Know more</button>
+        <div class="collapsed-data">
+            Full Speed Ahead!<br>
+            The entered URL has been predicted to be a secure web site, domain or IP address.<br><br>
+
+            This has been predicted by use of Machine Learning.<br> The Algorithms that have been used are:<br>
+            <ul>
+                <li>Logistic Regression</li>
+                <li>K Nearest Neighbours</li>
+                <li>Decision Tree Classifier</li>
+                <li>Random Forest</li>
+                <li>Support Vector Machine</li>
+            </ul>
+        </div>
     </div>
     <div class="free-space"></div>
-    
+    <script type="text/javascript">
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body></html>
