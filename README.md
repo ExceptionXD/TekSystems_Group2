@@ -16,6 +16,12 @@ Type following commands on your terminal.
 2. Move to project folder using cd command
 3. Create virtual enviroment 
 4. pip install flask
-5. run python URL_Model.py on terminal
-6. Move to templates directory and open student.html
+
+# How to execute the code on your System
+
+1. Open your terminal , move to project folder using cd command.
+2. Run python URL_Model.py on terminal
+3. Wait for few seconds for model training.
+4. Move to the port http://127.0.0.1:5000/ which is being locally hosted.
+5. Bang !! Find out whether the URL is malicious or not.
 
