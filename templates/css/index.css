@@ -1,0 +1,54 @@
+.index-body {
+    animation: background-color infinite 10s;
+    font-family: 'Lato', sans-serif;
+}
+
+.index-header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    animation: fadeIn 3s;
+}
+
+.free-space {
+    height: 250px;
+}
+
+input {
+    border: 0;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button {
+    height: 36px;
+    margin-top: 22.5px;
+    width: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 0px;
+    text-align: center;
+    position: fixed;
+    color: white;
+    margin-left: -32px;
+    background: #457BB8;
+}
+
+
+input:focus {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
