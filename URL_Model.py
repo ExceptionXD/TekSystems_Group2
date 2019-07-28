@@ -1,5 +1,46 @@
 #Malicious Url Detector
+####################Routing###########################
 
+from openpyxl import Workbook
+from flask import Flask, render_template, request
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+   return render_template('index.html')
+
+@app.route('/result',methods = ['POST', 'GET'])
+def result():
+   if request.method == 'POST':
+      result = request.form.get('search')
+      ans = prediction(result)
+      if (ans == 0):
+          return render_template("success.html",result = result)
+      else:
+            return render_template("failure.html",result = result)
+
+@app.route('/aftercontact',methods = ['POST', 'GET'])
+def msgStore():
+    book = Workbook()
+    sheet = book.active
+    if request.method == 'POST':
+        email = request.form.get('email')
+        message = request.form.get('message')
+        row = (email, message)
+        sheet.append(row)
+        book.save("messages.xls")
+        return render_template('aftercontact.html')
+
+@app.route('/about')
+def aboutus():
+   return render_template('aboutus.html')
+      
+@app.route('/contact')
+def contactus():
+   return render_template('contactus.html')
+
+
+#####################################################
 import pandas as pd
 import seaborn as sns
 import numpy as np
