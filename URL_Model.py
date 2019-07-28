@@ -88,3 +88,10 @@ lreg.fit(x_train,y_train)
 model_1 = lreg.score(x_test,y_test)
 model_1
 
+# ## K Nearest Neighbours
+# ## K Nearest Neighbours
+from sklearn.neighbors import KNeighborsClassifier
+classifier = KNeighborsClassifier(n_neighbors=4)
+classifier.fit(x_test, y_test)
+model_2 = classifier.score(x_test, y_test)
+model_2
