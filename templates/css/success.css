@@ -1,0 +1,43 @@
+.index-body {
+    font-family: 'Lato', sans-serif;
+}
+
+.index-header {
+    text-align: center;
+}
+
+
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .free-space {
+        height: 200px;
+    }
+
+    .collapsible {
+        background-color: transparent;
+        color: white;
+        border: 0px;
+        margin-left: 35%;
+    }
+
+    .collapsed-data {
+        margin-top: 40px;
+        text-align: left;
+        display: none;
+        margin-left: 30%;
+        width: 40%;
+        color: white;
+    }
+
+input:focus {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+    color: azure;
+}
