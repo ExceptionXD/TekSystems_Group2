@@ -157,3 +157,27 @@ clf.fit(x_test, y_test)
 model_5 = clf.score(x_test, y_test)
 model_5
 
+
+Algo=['LogisticRegression','KNearestNeighbors','DecisionTree','RandomForest','SupportVectorMachine']
+score = [model_1,model_2,model_3,model_4,model_5] 
+compare = pd.DataFrame({'Model':Algo,'F1_Score':score}, index = [i for i in range(1,6)])
+compare.T
+plt.figure(figsize=(18,5))
+sns.pointplot(x='Model',y='F1_Score',data=compare)
+plt.title('Model vs Score')
+plt.xlabel('MODEL')
+plt.ylabel('SCORE')
+
+plt.show()
+
+
+def prediction(var):
+    x_p = [var]
+    x_p = vect.transform(x_p)
+    res=clf.predict(x_p)
+    for i in range(len(res)+1):
+        return res[i]
+
+
+if __name__ == '__main__':
+   app.run(debug = True)
