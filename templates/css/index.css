@@ -18,37 +18,34 @@ h1 {
     height: 250px;
 }
 
-input {
-    border: 0;
-    font-size: 20px;
-    height: 40px;
-    margin-top: 20px;
-    width: 80%;
-    max-width: 500px;
-    padding: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-button {
-    height: 36px;
-    margin-top: 22.5px;
-    width: 30px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 0px;
-    text-align: center;
-    position: fixed;
-    color: white;
-    margin-left: -32px;
-    background: #457BB8;
-}
+@keyframes background-color {
+    0% {
+        background: #CDC8FF;
+    }
 
+    25% {
+        background: #A0DFFF;
+    }
 
-input:focus {
-    outline: none !important;
-}
+    50% {
+        background: #EAC8FF;
+    }
 
-button:focus {
-    outline: none !important;
+    75% {
+        background: #A0DFFF;
+    }
+
+    100% {
+        background: #CDC8FF;
+    }
 }
