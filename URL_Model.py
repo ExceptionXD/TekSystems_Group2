@@ -109,3 +109,10 @@ rf.fit(x_train,y_train)
 model_4 = rf.score(x_test,y_test)
 model_4
 
+# ## Support Vector Machine Classification
+from sklearn.svm import SVC
+clf = SVC(kernel = 'linear', random_state=1)
+clf.fit(x_test, y_test)
+model_5 = clf.score(x_test, y_test)
+model_5
+
