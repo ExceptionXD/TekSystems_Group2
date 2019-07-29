@@ -112,6 +112,66 @@
             text-align: center;
             padding-top: 15px;
         }
+		
+		.image-container {
+		  position: relative;
+		  margin-left: 3.75%;
+		  width: 10%;
+		  border-raidus: 2%;
+		  display: inline-block;
+		}
+
+		.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		  border-raidus: 2%;
+		}
+
+		.overlay {
+		  position: absolute;
+		  bottom: 0;
+		  left: 100%;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 0;
+		  height: 100%;
+		  transition: .5s ease;
+		}
+
+		.image-container:hover .overlay {
+		  width: 100%;
+		  left: 0;
+		}
+				
+		.overlay1 {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 0;
+		  height: 100%;
+		  transition: .5s ease;
+		}
+
+		.image-container:hover .overlay1 {
+		  width: 100%;
+		}
+
+		.text {
+		  color: white;
+		  font-size: 15px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  white-space: nowrap;
+		}
     </style>
 </head>
 
@@ -139,8 +199,53 @@
             We are a group of like-minded individuals working to fuel our passion. We are obsessed with Technology and we bring out fresh ideas which will not only lead to a better world but would also nurture young talents to work towards to work towards their goals.
         </p>
     </div>
+	<div>
+	<div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/2017-08-09-12-43-06-407(1).jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Ankita Singh</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/A%2B+Gallery_4.jpg" alt="Avatar" class="image">
+			<div class="overlay1">
+				<div class="text">Surabhi</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/IMG-20180930-WA0000.jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Shubrat Saha</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/IMG-20190414-WA0002.jpg" alt="Avatar" class="image">
+			<div class="overlay1">
+				<div class="text">Sanskriti Singh</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/IMG_20190729_114459.jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Sruti Salonee</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/LRM_EXPORT_40528582365338_20181011_221700384.jpeg" alt="Avatar" class="image">
+			<div class="overlay1">
+				<div class="text">Abhishek</div>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="https://teksystem-group2.s3.ap-south-1.amazonaws.com/me.jpg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Subhram Satyajeet</div>
+			</div>
+		</div>
+	</div>
 
-    <div class=" footer">
+    <div class="footer">
         All rights reserved (c) 2019 TekSystems_Group2
     </div>
 </body></html>
