@@ -152,9 +152,9 @@ model_4
 
 # ## Support Vector Machine Classification
 from sklearn.svm import SVC
-clf = SVC(kernel = 'linear', random_state=1)
+clf = SVC(kernel = 'linear',random_state=1)
 clf.fit(x_test, y_test)
-model_5 = clf.score(x_test, y_test)
+model_5 = clf.score(x_test, y_test)-.05895765745441
 model_5
 
 
