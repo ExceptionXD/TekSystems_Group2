@@ -7,15 +7,22 @@ The purpose of this project is to detect whether the site is malicious or not by
 
 1. Anaconda Should be installed else download it from https://www.anaconda.com/distribution/ 
 2. Python Version should be 3.7.0 or above.
+3. pip should be present.
+
+# Steps to install pip 
+
+1. Open your terminal
+2. run the command Install "sudo apt-get install python3-pip" .
 
 # Steps to install Flask API on your System
 
 Type following commands on your terminal.
 
-1. pip install virtualenv
-2. Move to project folder using cd command
-3. Create virtual enviroment 
-4. pip install flask
+1. pip install virtualenv using the command "sudo pip3 install virtualenv" 
+2. Now create a virtual environment using "virtualenv venv" 
+      you can use any name insted of venv
+3. Move to project folder using cd command
+4. Run the command "pip install flask" 
 
 # How to execute the code on your System
 
